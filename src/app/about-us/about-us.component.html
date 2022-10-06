@@ -1,4 +1,18 @@
 <div class="container">
-  <button (click)="show()" class="btn btn-success">Click Here</button>
-  <button (click)="show1()" class="btn btn-info">Touch Me</button>
+  <table class="table">
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Password</th>
+      <th>Action</th>
+    </tr>
+    <tr *ngFor="let employee of employees">
+      <td>{{ employee.id }}</td>
+      <td>{{ employee.name }}</td>
+      <td>{{ employee.email }}</td>
+      <td>{{ employee.password }}</td>
+      <td><button type="button" class="btn btn-outline-danger">Delete</button></td>
+    </tr>
+  </table>
 </div>
