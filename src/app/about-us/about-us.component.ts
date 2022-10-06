@@ -12,4 +12,12 @@ export class AboutUsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  show(){
+    alert('Hello Dulan , welcome to Angular')
+    console.log('DulanS')
+  }
+
+  show1(){
+    alert('Work hard and win')
+  }
 }

@@ -1,4 +1,28 @@
 <div class="container">
-  <h1>Dulanjaya Sandaruwan</h1>
-  <h2>Trainee Software Engineer</h2>
+  <h3>Dulanjaya Sandaruwan</h3>
+  <h4>Trainee Software Engineer</h4>
+
+  <form>
+    <fieldset enabled>
+      <div class="mb-3">
+        <input
+          type="text"
+          [formControl] = "name"
+          id="textInput"
+          class="form-control"
+          placeholder="Enter your name"
+        />
+      </div>
+      <div class="mb-3">
+        <input
+          type="text"
+          [formControl] = "email"
+          id="textInput"
+          class="form-control"
+          placeholder="Enter your email"
+        />
+      </div>
+      <button (click)="save()" type="submit" class="btn btn-success">Save</button>
+    </fieldset>
+  </form>
 </div>
